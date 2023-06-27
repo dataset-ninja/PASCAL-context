@@ -5,40 +5,55 @@ from dataset_tools.templates import AnnotationType, CVTask, Industry, License
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "PASCAL context"
+PROJECT_NAME_FULL: str = "PASCAL context"
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-INDUSTRIES: List[Industry] = None
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+LICENSE: License = License.Custom(
+    url="http://host.robots.ox.ac.uk/pascal/VOC/voc2010/index.html#rights"
+)
+INDUSTRIES: List[Industry] = [Industry.GeneralDomain()]
+CV_TASKS: List[CVTask] = [
+    CVTask.SemanticSegmentation(),
+]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
-RELEASE_YEAR: int = None
-HOMEPAGE_URL: str = None
+RELEASE_YEAR: int = 2014
+HOMEPAGE_URL: str = "https://www.cs.stanford.edu/~roozbeh/pascal-context/"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 867584
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/pascal-context"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = {
+    "Training/validation data": "http://host.robots.ox.ac.uk/pascal/VOC/voc2010/VOCtrainval_03-May-2010.tar",
+    "Training/validation annotations": "https://www.cs.stanford.edu/~roozbeh/pascal-context/trainval.tar.gz",
+    "Development kit code and documentation": "http://host.robots.ox.ac.uk/pascal/VOC/voc2010/VOCdevkit_08-May-2010.tar",
+    "PDF documentation": "http://host.robots.ox.ac.uk/pascal/VOC/voc2010/devkit_doc_08-May-2010.pdf",
+    "HTML documentation": "http://host.robots.ox.ac.uk/pascal/VOC/voc2010/htmldoc/index.html",
+    "Guidelines used for annotating the database (VOC2010)": "http://host.robots.ox.ac.uk/pascal/VOC/voc2010/guidelines.html",
+}
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
-PAPER: Optional[str] = None
-CITATION_URL: Optional[str] = None
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+PAPER: Optional[
+    str
+] = "https://www.cs.stanford.edu/~roozbeh/pascal-context/mottaghi_et_al_cvpr14.pdf"
+CITATION_URL: Optional[
+    str
+] = "https://www.cs.stanford.edu/~roozbeh/pascal-context/mottaghi_et_al_cvpr14.bib"
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Stanford University"
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://cs.stanford.edu/"
 TAGS: List[str] = None
 
 ##################################
