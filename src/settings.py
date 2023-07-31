@@ -13,8 +13,8 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "PASCAL context"
-PROJECT_NAME_FULL: str = "PASCAL context"
+PROJECT_NAME: str = "PASCAL Context"
+PROJECT_NAME_FULL: str = "PASCAL Context Dataset"
 
 ##################################
 # * After uploading to instance ##
