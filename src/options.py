@@ -2,6 +2,8 @@
 # ! Set up values if you want to change default values of visualizations
 ###############################################################################
 
+SAMPLE_RATE = 0.1
+
 # * Preview class to visualize in SUMMARY.md overview section
 # * Literal["ClassesPreview", "HorizontalGrid", "SideAnnotationsGrid", "Poster"]
 # * If None, then preview_class will be set automatically to "ClassesPreview"
@@ -130,6 +132,8 @@ def get_stats_options():
         "Previews": {
             "is_detection_task": PREVIEWS_IS_DETECTION_TASK,
         },
+        "Other": {"sample_rate": SAMPLE_RATE},
+
     }
 
     checked_stats_settings = {}
