@@ -24,7 +24,6 @@ def get_project_info(api: sly.Api):
     s.check_names()
 
     project_info = api.project.get_info_by_name(WORKSPACE_ID, s.PROJECT_NAME)
-    # project_info = None
     if not project_info:
         # If project doesn't found on instance, create it and use new project info.
         sly.logger.info(f"Project {s.PROJECT_NAME} not found on instance. Creating a new one...")
