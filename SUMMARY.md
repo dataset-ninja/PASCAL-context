@@ -6,4 +6,4 @@ Images in the PASCAL Context dataset have pixel-level semantic segmentation anno
 
 Here is the visualized example grid with annotations:
 
-<img src="https://github.com/dataset-ninja/pascal-context/raw/main/visualizations/horizontal_grid.png">
+[Horizontal Grid](https://github.com/dataset-ninja/pascal-context/visualizations/horizontal_grid.webm)
