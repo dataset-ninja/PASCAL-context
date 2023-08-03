@@ -25,14 +25,12 @@ LICENSE: License = License.Custom(
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Domain.General()]
 CATEGORY: Category = Category.General(benchmark=True)
 
-CV_TASKS: List[CVTask] = [
-    CVTask.SemanticSegmentation(),
-]
+CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
-RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2014-06-26"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
-    RELEASE_YEAR: int = 2014
+    RELEASE_YEAR: int = None
 
 HOMEPAGE_URL: str = "https://www.cs.stanford.edu/~roozbeh/pascal-context/"
 # e.g. "https://some.com/dataset/homepage"
