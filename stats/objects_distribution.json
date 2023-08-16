@@ -3228,7 +3228,7 @@
           "reset": false
         }
       },
-      "height": 5000
+      "height": 7000
     },
     "legend": { "show": false },
     "plotOptions": {
