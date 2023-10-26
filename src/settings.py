@@ -33,7 +33,7 @@ RELEASE_DATE: Optional[str] = "2014-06-26"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = "https://www.cs.stanford.edu/~roozbeh/pascal-context/"
+HOMEPAGE_URL: str = "https://cs.stanford.edu/~roozbeh/pascal-context/"
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = 867584
@@ -60,7 +60,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 PAPER: Optional[
     str
-] = "https://www.cs.stanford.edu/~roozbeh/pascal-context/mottaghi_et_al_cvpr14.pdf"
+] = "https://cs.stanford.edu/~roozbeh/pascal-context/mottaghi_et_al_cvpr14.pdf"
 CITATION_URL: Optional[
     str
 ] = "https://www.cs.stanford.edu/~roozbeh/pascal-context/mottaghi_et_al_cvpr14.bib"
@@ -74,6 +74,7 @@ AUTHORS: Optional[List[str]] = [
     "Raquel Urtasun",
     "Alan Yuille",
 ]
+AUTHORS_CONTACTS: Optional[List[str]] = ["http://roozbehm.info/"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Stanford University"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://cs.stanford.edu/"
@@ -120,6 +121,7 @@ def get_settings():
     settings["paper"] = PAPER
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
