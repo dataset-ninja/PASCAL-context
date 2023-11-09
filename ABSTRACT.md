@@ -1,4 +1,6 @@
-The authors of the **PASCAL Context** dataset conduct a comprehensive investigation into the significance of context within existing state-of-the-art detection and segmentation methodologies. Their approach involves the meticulous labeling of every pixel encompassed within the **PASCAL VOC 2010** detection challenge, associating each pixel with a semantic category. This dataset is envisioned to present a considerable challenge to the research community, as it incorporates an impressive 520 additional classes that cater to both semantic segmentation and object detection. <i>Note, that there are 42 unlabeled classes in the dataset.</i>
+The authors of the **PASCAL Context** dataset conduct a comprehensive investigation into the significance of context within existing state-of-the-art detection and segmentation methodologies. Their approach involves the meticulous labeling of every pixel encompassed within the **PASCAL VOC 2010** detection challenge, associating each pixel with a semantic category. This dataset is envisioned to present a considerable challenge to the research community, as it incorporates an impressive 520 additional classes that cater to both semantic segmentation and object detection. 
+
+<i>Note, that there are 42 unlabeled classes in the dataset.</i>
 
 <img src="https://github.com/supervisely/dataset-tools/assets/78355358/e16bd5fc-b925-4258-8ec5-9edb63a2fc64" alt="image" width="600">
 
