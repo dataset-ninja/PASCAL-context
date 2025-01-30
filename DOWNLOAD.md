@@ -1,6 +1,6 @@
 Dataset **PASCAL Context** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/ukolvio4g23910y5lzyz8/pascal-context-DatasetNinja.tar?rlkey=zjklw7egp5k5rsrj2dnijzavq&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzExODRfUEFTQ0FMIENvbnRleHQvcGFzY2FsLWNvbnRleHQtRGF0YXNldE5pbmphLnRhciIsICJzaWciOiAiVnJsV1ZDbnliQlVGTUNQM1p4bW1mUEZSYjhhcEdYQ3pzN3VkWmxrQjdocz0ifQ==)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
